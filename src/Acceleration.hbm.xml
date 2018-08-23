@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+      <class name="entity.Acceleration_info" table="acceleration_info">
+      <meta attribute="class-description">
+         This class contains the acceleration detail. 
+      </meta>
+      <id name="id" type="int" column="id">
+         <generator class="native"/>
+      </id>
+      <property name="triggerTime" column="trigger_time" type="string"/>
+      <property name="index_1_x" column="index_1_x" type="double"/>
+      <property name="index_2_x" column="index_2_x" type="double"/>
+      <property name="index_1_y" column="index_1_y" type="double"/>
+      <property name="index_2_y" column="index_2_y" type="double"/>
+      <property name="index_1_z" column="index_1_z" type="double"/>
+      <property name="index_2_z" column="index_2_z" type="double"/>
+   </class>
+</hibernate-mapping>
